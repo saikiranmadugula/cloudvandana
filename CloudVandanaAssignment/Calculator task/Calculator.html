@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="text" id="result" disabled>
+        <div class="clearbutton">
+            <button class="clearall" onclick="clearResult()">AC</button>
+        </div>
+        <div class="numpad">
+            <button class="custom-butt" onclick="appendToResult('7')">7</button>
+            <button class="custom-butt" onclick="appendToResult('8')">8</button>
+            <button class="custom-butt" onclick="appendToResult('9')">9</button>
+            <button class="custom-gray" onclick="appendToResult('+')">+</button>
+            <button class="custom-butt" onclick="appendToResult('4')">4</button>
+            <button class="custom-butt" onclick="appendToResult('5')">5</button>
+            <button class="custom-butt" onclick="appendToResult('6')">6</button>
+            <button class="custom-gray" onclick="appendToResult('-')">-</button>
+            <button class="custom-butt" onclick="appendToResult('1')">1</button>
+            <button class="custom-butt" onclick="appendToResult('2')">2</button>
+            <button class="custom-butt" onclick="appendToResult('3')">3</button>
+            <button class="custom-gray" onclick="appendToResult('*')">x</button>
+            <button class="custom-butt" onclick="appendToResult('0')">0</button>
+            <button class="cal-butt" onclick="calculateResult()">=</button>
+            <button class="custom-butt" onclick="appendToResult('.')">.</button>
+            <button class="custom-gray" onclick="appendToResult('/')">/</button>      
+        </div>
+        
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
